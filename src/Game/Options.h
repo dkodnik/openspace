@@ -40,6 +40,7 @@ extern char opKeymap[OP_KEYMAPSIZE];
 
 extern bool opReloading;
 extern sdword opNoPalMB;
+extern sdword glAntiAliasing;
 extern sdword opMusicVol;
 extern sdword opSFXVol;
 extern sdword opSpeechVol;

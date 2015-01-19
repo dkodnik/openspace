@@ -378,6 +378,8 @@ sdword opNoPalMinMB = 16;
 sdword opSaveNoPalMB;
 sdword opNoPalMB = 64;
 
+sdword glAntiAliasing = 0;
+
 static regionhandle opNoPalDrawRegion = NULL;
 
 static udword opOldDevcaps;

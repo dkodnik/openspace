@@ -692,7 +692,8 @@ scriptEntry utyOptionsList[] =
     {"fuzzyBlobs",              scriptSetUdwordCB, &smFuzzyBlobs},
     {"InstantTransition",       scriptSetUdwordCB, &smInstantTransition},
     {"brightnessVal",           scriptSetUdwordCB, &opBrightnessVal},
-
+    {"glAntiAliasing",          scriptSetUdwordCB, &glAntiAliasing},
+    
 
   {"\n[sound options]\n", scriptSetStringCB, &filecfgblankspace},
 

@@ -121,6 +121,8 @@ extern bool8 g_HiddenRemoval;
 
 extern color HorseRaceDropoutColor;
 
+extern sdword glAntiAliasing;
+
 vector g_RndPosition;
 
 bool rndTakeScreenshot = FALSE;
@@ -854,7 +856,9 @@ bool setupPixelFormat()
 	static Uint32 lastHeight = 0;
 	static Uint32 lastDepth  = 0;
 	static bool   lastFull   = FALSE;
-	int FSAA = 0; //os_config_read_uint( NULL, "FSAA", 1 )
+	//int FSAA = 0; //os_config_read_uint( NULL, "FSAA", 1 )
+    int FSAA = (int)glAntiAliasing;
+	dbgMessagef("FSAA=%d",FSAA);
 #ifdef HW_ENABLE_GLES
     SDL_SysWMinfo info;
     EGLint num_config = 1;
